@@ -600,7 +600,6 @@ label {
 }
 .form-icon {
 	position: absolute;
-	margin: 3px;
 	top: 50%;
 	left: 16px;
 	transform: translateY(-50%);
@@ -619,6 +618,7 @@ label {
 	padding: 8px 16px;
 	resize: none;
 	margin: 0;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea::placeholder {
 	color: var(--modal);
@@ -638,6 +638,7 @@ label {
 	border-radius: 2px;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	margin-right: 8px;
 }
 
 .check-input:checked + .check-label > .checkbox-span {
@@ -649,7 +650,7 @@ label {
 	color: var(--interactive);
 }
 .form-btn {
-	width: 169px;
-	height: 54px;
+	min-width: 169px;
+	height: 56px;
 	margin: 0 auto;
 }
