@@ -399,7 +399,10 @@ label {
 	padding-left: 16px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-
+.subscribe-input:focus,
+.btn-send:focus {
+	outline: none;
+}
 .subscribe-input::placeholder {
 	color: var(--white);
 }
@@ -411,9 +414,7 @@ label {
 	min-width: 165px;
 	padding: 0;
 }
-.send-icon {
-	margin-left: 16px;
-}
+
 /* portfolio */
 
 /* filters btns */
@@ -614,7 +615,6 @@ label {
 .textarea {
 	height: 120px;
 	line-height: 1.17;
-	color: var(--modal);
 	padding: 8px 16px;
 	resize: none;
 	margin: 0;
